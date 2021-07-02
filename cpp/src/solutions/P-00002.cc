@@ -34,19 +34,10 @@ class P00002 : public ::testing::Test {
 };
 
 TEST_F(P00002, Solution) {
-  ListNode* l1 = new ListNode(2);
-  ListNode* head1 = l1;
-  head1->next = new ListNode(4);
-  head1 = head1->next;
-  head1->next = new ListNode(3);
+  auto l1 = CreateListNode(std::vector<int>{2, 4, 3});
+  auto l2 = CreateListNode(std::vector<int>{5, 6, 4});
 
-  ListNode* l2 = new ListNode(5);
-  ListNode* head2 = l2;
-  head2->next = new ListNode(6);
-  head2 = head2->next;
-  head2->next = new ListNode(4);
-
-  auto result = addTwoNumbers(l1, l2);
+  auto result = addTwoNumbers(l1->next, l2->next);
   while (result != nullptr) {
     std::cout << result->val << " ";
     result = result->next;
