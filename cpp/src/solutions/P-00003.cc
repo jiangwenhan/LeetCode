@@ -1,5 +1,3 @@
-#include "src/include/list_node.h"
-
 #include <gtest/gtest.h>
 
 namespace leetcode {
