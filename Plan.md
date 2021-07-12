@@ -1,3 +1,18 @@
+### Two Pointer
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+| 344         | E           |             |
+| 26          | E           |             |
+| 11          | M           |             |
+| 42          | H           |             |
+| 80          | M           |             |
+| 283         | E           |             |
+| 1047        | E           |             |
+
+### Binary Search
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
 ### Problem List
 | Problem SEQ | ByteDance   | Shoppe      | Difficulty  | Status      |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
