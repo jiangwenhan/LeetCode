@@ -31,5 +31,16 @@ TEST_F(Input, array) {
 }
 
 TEST_F(Input, matrix) {
-
+  char* input = "[  [  1 , 2,  3 ]   ,  [ 4 ,5,6]   , [7,8,9 ]         ]";
+  std::vector<std::vector<int>> matrix;
+  auto res = AToMatrix(matrix, input);
+  std::cout << "res:" << res << std::endl;
+  if (res == 0) {
+    for (auto& each : matrix) {
+      for (auto item : each) {
+        std::cout << item << ",";
+      }
+      std::cout << std::endl;
+    }
+  }
 }

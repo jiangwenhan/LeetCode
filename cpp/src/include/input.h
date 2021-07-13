@@ -25,7 +25,7 @@ int SkipSpace(char* input) {
 int AToArray(std::vector<int>& array, char* input) {
   char* curr = input;
   int buffer_size = 0;
-  const std::regex int_regex("(\\+|-)?[[:digit:]]+\\s*");
+  const std::regex int_regex("\\s*(\\+|-)?[[:digit:]]+\\s*");
   while (curr != nullptr && curr[0] != '\0') {
     if (curr[0] == '[') {
       curr++;
@@ -51,6 +51,35 @@ int AToArray(std::vector<int>& array, char* input) {
 }
 
 int AToMatrix(std::vector<std::vector<int>>& matrix, char* input) {
+  char* curr = input;
+  int buffer_size = 0;
+  int dimension = 0;
+  while (curr != nullptr && curr[0] != '\0') {
+    if (curr[0] == '[') {
+      dimension++;
+      curr++;
+      auto dis = SkipSpace(curr);
+      curr += dis;
+    } else if (curr[0] == ',' || curr[0] == ']') {
+      if (curr[0] == ']') dimension--;
+      if (dimension == 1 && curr[0] != ',') {
+        std::string buffer(curr - buffer_size - 1, buffer_size + 2);
+        std::vector<int> array;
+        auto res = AToArray(array, buffer.data());
+        if (res != 0) return res;
+        matrix.emplace_back(array);
+        buffer_size = 0;
+      } else if (dimension == 2) {
+        buffer_size++;
+      }
+      curr++;
+    } else {
+      if (dimension == 2) {
+        buffer_size++;
+      }
+      curr++;
+    }
+  }
   return 0;
 }
 
