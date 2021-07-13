@@ -4,8 +4,29 @@ namespace leetcode {
 class P00064 : public ::testing::Test {
  protected:
   int minPathSum(std::vector<std::vector<int>>& grid) {
-    int sum = 0;
-    return sum;
+    int m = grid.size();
+    int n = 0;
+    if (grid.size() > 0) {
+      n = grid[0].size();
+    }
+
+    std::vector<std::vector<int>> sum;
+    for (int i = 0; i < m; ++i) {
+      std::vector<int> colomn(n);
+      sum.emplace_back(colomn);
+      for (int j = 0; j < n; ++j) {
+        if (i == 0 && j == 0) {
+          sum[i][j] = grid[i][j];
+        } else if (i == 0 && j > 0) {
+          sum[i][j] = sum[i][j - 1] + grid[i][j];
+        } else if (i > 0 && j == 0) {
+          sum[i][j] = sum[i - 1][j] + grid[i][j];
+        } else {
+          sum[i][j] = std::min(sum[i - 1][j], sum[i][j - 1]) + grid[i][j];
+        }
+      }
+    }
+    return sum[m - 1][n - 1];
   }
 };
 
