@@ -8,6 +8,12 @@ cc_library(
 )
 
 cc_test(
+    name = "input",
+    srcs = ["input.cc"],
+    deps = [":common"],
+)
+
+cc_test(
     name = "P-00002",
     srcs = ["P-00002.cc"],
     deps = [":common"],
@@ -70,6 +76,12 @@ cc_test(
 cc_test(
     name = "P-00061",
     srcs = ["P-00061.cc"],
+    deps = [":common"],
+)
+
+cc_test(
+    name = "P-00064",
+    srcs = ["P-00064.cc"],
     deps = [":common"],
 )
 
