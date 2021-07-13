@@ -12,6 +12,44 @@
 ### Binary Search
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
+| 1062        | M           |             |
+| 410         | H           |             |
+| 1231        | H           |             |
+| 852         | E           |             |
+| 1011        | M           |             |
+| 1292        | M           |             |
+
+### Linked List
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
+### Heap
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
+### Hash
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
+### Tree BFS
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
+### Tree DFS
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
+### Graph DFS
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
+### Dynamic Programming 1D
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
+### Dynamic Programming 2D
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
 
 ### Problem List
 | Problem SEQ | ByteDance   | Shoppe      | Difficulty  | Status      |
