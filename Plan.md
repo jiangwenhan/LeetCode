@@ -19,7 +19,7 @@
 | 1011        | M           |             |
 | 1292        | M           |             |
 
-### Linked List
+### 1.Linked List
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 | 237         | E           |             |
@@ -27,15 +27,19 @@
 | 92          | M           |             |
 | 25          | H           |             |
 
-### Heap
+### 2.Heap
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### Hash
+### 3.Hash
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### Tree BFS
+### 4.Stack
+| Problem SEQ | Difficulty  | Status      |
+| ----------- | ----------- | ----------- |
+
+### 5.Tree BFS
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 | 104         | E           |             |
@@ -46,7 +50,7 @@
 | 515         | M           |             |
 | 429         | M           |             |
 
-### Tree DFS
+### 6.Tree DFS
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 | 104         | E           |             |
@@ -59,19 +63,19 @@
 | 450         | M           |             |
 | 508         | M           |             |
 
-### Graph DFS
+### 7.Graph DFS
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### Dynamic Programming 1D
+### 8.Dynamic Programming 1D
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### Dynamic Programming 2D
+### 9.Dynamic Programming 2D
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### Problem List
+### APPENDIX.Problem List
 | Problem SEQ | ByteDance   | Shoppe      | Difficulty  | Status      |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | 1           |             | √           | E           |             |
