@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 
+#include "src/include/tree_node.h"
+
 int SkipSpace(char* input) {
   int distance = 0;
   char* curr = input;
@@ -80,6 +82,10 @@ int AToMatrix(std::vector<std::vector<int>>& matrix, char* input) {
       curr++;
     }
   }
+  return 0;
+}
+
+int AToTree(TreeNode* root, char* input) {
   return 0;
 }
 
