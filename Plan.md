@@ -22,6 +22,10 @@
 ### Linked List
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
+| 237         |             |             |
+| 141         |             |             |
+| 92          |             |             |
+| 25          |             |             |
 
 ### Heap
 | Problem SEQ | Difficulty  | Status      |
@@ -34,6 +38,13 @@
 ### Tree BFS
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
+| 104         |             |             |
+| 199         |             |             |
+| 101         |             |             |
+| 103         |             |             |
+| 111         |             |             |
+| 515         |             |             |
+| 429         |             |             |
 
 ### Tree DFS
 | Problem SEQ | Difficulty  | Status      |
