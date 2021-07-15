@@ -1,4 +1,4 @@
-### Two Pointer
+### 1. Two Pointer
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 | 344         | E           |             |
@@ -9,7 +9,7 @@
 | 283         | E           |             |
 | 1047        | E           |             |
 
-### Binary Search
+### 2. Binary Search
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 | 1062        | M           |             |
@@ -19,7 +19,7 @@
 | 1011        | M           |             |
 | 1292        | M           |             |
 
-### 1.Linked List
+### 3. Linked List
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 | 237         | E           |             |
@@ -27,19 +27,19 @@
 | 92          | M           |             |
 | 25          | H           |             |
 
-### 2.Heap
+### 4. Heap
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### 3.Hash
+### 5. Hash
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### 4.Stack
+### 6. Stack
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### 5.Tree BFS
+### 7. Tree BFS
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 | 104         | E           |             |
@@ -50,7 +50,7 @@
 | 515         | M           |             |
 | 429         | M           |             |
 
-### 6.Tree DFS
+### 8. Tree DFS
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 | 104         | E           |             |
@@ -63,19 +63,19 @@
 | 450         | M           |             |
 | 508         | M           |             |
 
-### 7.Graph DFS
+### 9. Graph DFS
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### 8.Dynamic Programming 1D
+### 10. Dynamic Programming 1D
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### 9.Dynamic Programming 2D
+### 11. Dynamic Programming 2D
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
 
-### APPENDIX.Problem List
+### APPENDIX. Problem List
 | Problem SEQ | ByteDance   | Shoppe      | Difficulty  | Status      |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | 1           |             | √           | E           |             |
