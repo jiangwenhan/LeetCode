@@ -44,3 +44,10 @@ TEST_F(Input, matrix) {
     }
   }
 }
+
+TEST_F(Input, binary_tree) {
+  char* input = "[3,9,20,null,null,15,7]";
+  TreeNode root;
+  auto res = AToBinaryTree(&root, input);
+  std::cout << "res:" << res << std::endl;
+}

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <deque>
 #include <regex>
 #include <sstream>
 #include <string>
@@ -85,7 +86,89 @@ int AToMatrix(std::vector<std::vector<int>>& matrix, char* input) {
   return 0;
 }
 
-int AToTree(TreeNode* root, char* input) {
+int AToBinaryTree(TreeNode* root, char* input) {
+  char* curr = input;
+  std::deque<TreeNode*> level_nodes;
+  int buffer_size = 0;
+  const std::regex re_int("\\s*(\\+|-)?[[:digit:]]+\\s*");
+  const std::regex re_null("\\s*null\\s*");
+
+  while (curr != nullptr && curr[0] != '\0') {
+    if (curr[0] == '[') {
+      curr++;
+      auto dis = SkipSpace(curr);
+      curr += dis;
+    } else if (curr[0] == ',' || curr[0] == ']') {
+      std::string buffer(curr - buffer_size, buffer_size);
+      if (std::regex_match(buffer, re_int)) {
+        try {
+          level_nodes.push_back(new TreeNode(std::stoi(buffer)));
+        } catch (...) {
+          return -2;
+        }
+      } else if (std::regex_match(buffer, re_null)) {
+        level_nodes.push_back(nullptr);
+      } else {
+        return -1;
+      }
+      curr++;
+      buffer_size = 0;
+    } else {
+      buffer_size++;
+      curr++;
+    }
+  }
+
+  std::cout << "[";
+  for (auto item : level_nodes) {
+    if (item != nullptr) {
+      std::cout << item->val << ",";
+    } else {
+      std::cout << "null,";
+    }
+  }
+  std::cout << "]" << std::endl;
+
+  int count = 1;
+  std::deque<TreeNode*> upper_level;
+  upper_level.push_back(root);
+
+  if (level_nodes.size() > 0) {
+    upper_level.front()->val = level_nodes.front()->val;
+    level_nodes.pop_front();
+  }
+
+  while (level_nodes.size() > 0) {
+    int next_count = 0;
+    for (int i = 0; i < count && level_nodes.size() > 0; ++i) {
+      TreeNode* top = upper_level.front();
+      upper_level.pop_front();
+
+      if (top == nullptr) {
+        continue;
+      }
+
+      if (level_nodes.size() > 0) {
+        TreeNode* left = level_nodes.front();
+        level_nodes.pop_front();
+        top->left = left;
+        upper_level.push_back(left);
+        next_count++;
+      }
+
+      if (level_nodes.size() > 0) {
+        TreeNode* right = level_nodes.front();
+        level_nodes.pop_front();
+        top->right = right;
+        upper_level.push_back(right);
+        next_count++;
+      }
+
+      if (i == count - 1) {
+        count = next_count;
+      }
+    }
+  }
+
   return 0;
 }
-
