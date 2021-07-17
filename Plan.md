@@ -41,6 +41,14 @@
 ### 5. Hash
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
+| 1           |             |             |
+| 560         |             |             |
+| 3           |             |             |
+| 49          |             |             |
+| 138         |             |             |
+| 340         |             |             |
+| 554         |             |             |
+| 535         |             |             |
 
 ### 6. Stack
 | Problem SEQ | Difficulty  | Status      |
@@ -77,10 +85,39 @@
 ### 10. Dynamic Programming 1D
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
+| 78          |             |             |
+| 139         |             |             |
+| 90          |             |             |
+| 22          |             |             |
+| 746         |             |             |
+| 70          |             |             |
+| 35          |             |             |
+| 96          |             |             |
+| 91          |             |             |
+| 53          |             |             |
+| 343         |             |             |
+| 279         |             |             |
+| 338         |             |             |
+| 303         |             |             |
+| 140         |             |             |
 
 ### 11. Dynamic Programming 2D
 | Problem SEQ | Difficulty  | Status      |
 | ----------- | ----------- | ----------- |
+| 63          |             |             |
+| 1143        |             |             |
+| 931         |             |             |
+| 62          |             |             |
+| 120         |             |             |
+| 304         |             |             |
+| 115         |             |             |
+| 877         |             |             |
+| 5           |             |             |
+| 516         |             |             |
+| 873         |             |             |
+| 1312        |             |             |
+| 312         |             |             |
+| 1000        |             |             |
 
 ### APPENDIX. Problem List
 | Problem SEQ | ByteDance   | Shoppe      | Difficulty  | Status      |
