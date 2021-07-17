@@ -58,14 +58,19 @@ TEST_F(P00103, Solution) {
   std::vector<std::string> cases {
     "[3,9,20,null,null,15,7]",
     "[1]",
+    "[]",
   };
 
   for (auto each : cases) {
     TreeNode root;
     auto res = AToBinaryTree(&root, each.data());
     std::cout << "res: " << res << std::endl;
-    if (res != 0) continue;
-    auto result = zigzagLevelOrder(&root);
+    if (res < 0) continue;
+    TreeNode* curr = &root;
+    if (res == 404) {
+      curr = nullptr;
+    }
+    auto result = zigzagLevelOrder(curr);
     for (auto& level : result) {
       std::cout << "[";
       for (auto item : level) {

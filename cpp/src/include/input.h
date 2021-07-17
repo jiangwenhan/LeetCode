@@ -100,6 +100,10 @@ int AToBinaryTree(TreeNode* root, char* input) {
       curr += dis;
     } else if (curr[0] == ',' || curr[0] == ']') {
       std::string buffer(curr - buffer_size, buffer_size);
+      if (buffer.size() == 0) {
+        return 404;
+      }
+      // std::cout << "buffer:[" << buffer << "], size:" << buffer.size() << std::endl;
       if (std::regex_match(buffer, re_int)) {
         try {
           level_nodes.push_back(new TreeNode(std::stoi(buffer)));
