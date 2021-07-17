@@ -2,6 +2,7 @@ cc_library(
     name = "common",
     deps = [
         "//src/include:data_structure",
+        "//src/include/algorithms",
         "@com_google_googletest//:gtest",
         "@com_google_googletest//:gtest_main",
     ],

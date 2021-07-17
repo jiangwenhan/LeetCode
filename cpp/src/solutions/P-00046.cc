@@ -1,5 +1,7 @@
 #include <gtest/gtest.h>
 
+#include "src/include/algorithms/swap.h"
+
 namespace leetcode {
 class P00046 : public ::testing::Test {
  protected:
@@ -19,12 +21,6 @@ class P00046 : public ::testing::Test {
       dfs(result, nums, index + 1);
       swap(nums, i, index);
     }
-  }
-
-  void swap(std::vector<int>& nums, int i, int j) {
-    int tmp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = tmp;
   }
 };
 
