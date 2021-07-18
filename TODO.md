@@ -5,16 +5,10 @@ Interview Study and Practice, Fuck!
 
 ### Todo
 
-- [ ] Swap (vector)
 - [ ] Sort
   - [ ] Insertion
   - [ ] Quick
   - [ ] Merge
-- [ ] Heap Data Structure
-  - [ ] poll
-  - [ ] peek
-  - [ ] heapify
-  - [ ] left, right child, parent index or node
 
 ### In Progress
 
@@ -29,6 +23,12 @@ Interview Study and Practice, Fuck!
 - [x] Data Structure
   - [x] ListNode
   - [x] TreeNode
+- [x] Heap Data Structure
+  - [x] poll
+  - [x] peek
+  - [x] heapify
+  - [x] left, right child, parent index or node
+- [x] Swap (vector)
 
 ## Performance Need to Improve List
 
@@ -39,9 +39,9 @@ Interview Study and Practice, Fuck!
 
 ### In Progress
 
-- [ ] Something
+- [ ] Nothing
 
 ### Done ✓
 
-- [x] Something
+- [x] Nothing
 
