@@ -1,8 +1,9 @@
 #include <gtest/gtest.h>
 #include <algorithm>
 #include <deque>
-#include "src/include/tree_node.h"
 #include "src/include/input.h"
+#include "src/include/output.h"
+#include "src/include/tree_node.h"
 
 namespace leetcode {
 class P00103 : public ::testing::Test {
@@ -10,6 +11,7 @@ class P00103 : public ::testing::Test {
     LEFT_2_RIGHT,
     RIGHT_2_LEFT,
   };
+
  protected:
   std::vector<std::vector<int>> zigzagLevelOrder(TreeNode* root) {
     std::vector<std::vector<int>> res;
@@ -47,7 +49,6 @@ class P00103 : public ::testing::Test {
         level_count = level_nodes.size();
         level_val.clear();
       }
-
     }
 
     return res;
@@ -55,10 +56,10 @@ class P00103 : public ::testing::Test {
 };
 
 TEST_F(P00103, Solution) {
-  std::vector<std::string> cases {
-    "[3,9,20,null,null,15,7]",
-    "[1]",
-    "[]",
+  std::vector<std::string> cases{
+      "[3,9,20,null,null,15,7]",
+      "[1]",
+      "[]",
   };
 
   for (auto each : cases) {
@@ -72,11 +73,7 @@ TEST_F(P00103, Solution) {
     }
     auto result = zigzagLevelOrder(curr);
     for (auto& level : result) {
-      std::cout << "[";
-      for (auto item : level) {
-        std::cout << item << ",";
-      }
-      std::cout << "]" << std::endl;
+      PrintArray(level);
     }
   }
 }

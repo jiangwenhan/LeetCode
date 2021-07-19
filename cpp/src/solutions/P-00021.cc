@@ -1,6 +1,6 @@
-#include "src/include/list_node.h"
-
 #include <gtest/gtest.h>
+#include "src/include/list_node.h"
+#include "src/include/output.h"
 
 namespace leetcode {
 class P00021 : public ::testing::Test {
@@ -38,12 +38,7 @@ TEST_F(P00021, Solution) {
   };
 
   for (auto& lists : cases) {
-    auto result = mergeTwoLists(std::get<0>(lists), std::get<1>(lists));
-    while (result != nullptr) {
-      std::cout << result->val << " ";
-      result = result->next;
-    }
-    std::cout << std::endl;
+    PrintLinkedList(mergeTwoLists(std::get<0>(lists), std::get<1>(lists)));
   }
 }
 }  // namespace leetcode

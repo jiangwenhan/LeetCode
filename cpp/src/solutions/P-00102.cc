@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <deque>
+#include "src/include/output.h"
 #include "src/include/tree_node.h"
-
 namespace leetcode {
 class P00102 : public ::testing::Test {
  protected:
@@ -46,21 +46,16 @@ TEST_F(P00102, Solution) {
   TreeNode c1_20(20, &c1_15, &c1_7);
   TreeNode c1_9(9, nullptr, nullptr);
   TreeNode c1_root(3, &c1_9, &c1_20);
+
   auto res1 = levelOrder(&c1_root);
   for (auto& each : res1) {
-    for (auto item : each) {
-      std::cout << item << ",";
-    }
-    std::cout << std::endl;
+    PrintArray(each);
   }
   // case 2
   TreeNode c2_root(1, nullptr, nullptr);
   auto res2 = levelOrder(&c2_root);
   for (auto& each : res2) {
-    for (auto item : each) {
-      std::cout << item << ",";
-    }
-    std::cout << std::endl;
+    PrintArray(each);
   }
   // case 3
   auto res3 = levelOrder(nullptr);

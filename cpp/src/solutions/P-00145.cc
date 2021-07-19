@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-
+#include "src/include/output.h"
 #include "src/include/tree_node.h"
 
 namespace leetcode {
@@ -28,21 +28,15 @@ TEST_F(P00145, Solution) {
   TreeNode c1_2(2, &c1_3, nullptr);
   TreeNode c1_root(1, nullptr, &c1_2);
   auto res1 = postorderTraversal(&c1_root);
-  for (auto item : res1) {
-    std::cout << item << ",";
-  }
-  std::cout << std::endl;
+  PrintArray(res1);
 
   // case 2
   auto res2 = postorderTraversal(nullptr);
-  std::cout << res2.size() << std::endl;
+  PrintArray(res2);
 
   // case 3
   TreeNode c3_root(1, nullptr, nullptr);
   auto res3 = postorderTraversal(&c3_root);
-  for (auto item : res3) {
-    std::cout << item << ",";
-  }
-  std::cout << std::endl;
+  PrintArray(res3);
 }
 }  // namespace leetcode

@@ -25,7 +25,7 @@ class P00069 : public ::testing::Test {
 };
 
 TEST_F(P00069, Solution) {
-  std::vector<int> cases {0, 1, 2, 4, 8, 9, 2147395599};
+  std::vector<int> cases{0, 1, 2, 4, 8, 9, 2147395599};
   for (auto each : cases) {
     std::cout << mySqrt(each) << std::endl;
   }

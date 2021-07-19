@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include "src/include/output.h"
 
 namespace leetcode {
 class P00015 : public ::testing::Test {
@@ -42,10 +43,7 @@ TEST_F(P00015, Solution) {
   for (auto& each_case : cases) {
     auto rs = threeSum(each_case);
     for (auto& rs_each : rs) {
-      for (auto val : rs_each) {
-        std::cout << val << ",";
-      }
-      std::cout << std::endl;
+      PrintArray(rs_each);
     }
   }
 }

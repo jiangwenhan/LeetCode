@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include "src/include/output.h"
 
 namespace leetcode {
 class P00054 : public ::testing::Test {
@@ -65,10 +66,7 @@ TEST_F(P00054, Solution) {
 
   for (auto& each : cases) {
     auto res = spiralOrder(each);
-    for (auto item : res) {
-      std::cout << item << ",";
-    }
-    std::cout << std::endl;
+    PrintArray(res);
   }
 }
 }  // namespace leetcode

@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-
 #include "src/include/algorithms/swap.h"
+#include "src/include/output.h"
 
 namespace leetcode {
 class P00046 : public ::testing::Test {
@@ -34,10 +34,7 @@ TEST_F(P00046, Solution) {
   for (auto& each : cases) {
     auto result = permute(each);
     for (auto& res : result) {
-      for (auto item : res) {
-        std::cout << item << ",";
-      }
-      std::cout << std::endl;
+      PrintArray(res);
     }
   }
 }

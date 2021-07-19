@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include "src/include/output.h"
 
 namespace leetcode {
 class P00048 : public ::testing::Test {
@@ -35,10 +36,7 @@ TEST_F(P00048, Solution) {
   rotate(case1);
 
   for (auto& each : case1) {
-    for (auto item : each) {
-      std::cout << item << ",";
-    }
-    std::cout << std::endl;
+    PrintArray(each);
   }
 
   std::vector<std::vector<int>> case2 = {
@@ -51,38 +49,28 @@ TEST_F(P00048, Solution) {
   rotate(case2);
 
   for (auto& each : case2) {
-    for (auto item : each) {
-      std::cout << item << ",";
-    }
-    std::cout << std::endl;
+    PrintArray(each);
   }
 
   std::vector<std::vector<int>> case3 = {
-    std::vector<int>{1},
+      std::vector<int>{1},
   };
 
   rotate(case3);
 
   for (auto& each : case3) {
-    for (auto item : each) {
-      std::cout << item << ",";
-    }
-    std::cout << std::endl;
+    PrintArray(each);
   }
 
   std::vector<std::vector<int>> case4 = {
-    std::vector<int>{1, 2},
-    std::vector<int>{3, 4},
+      std::vector<int>{1, 2},
+      std::vector<int>{3, 4},
   };
 
   rotate(case4);
 
   for (auto& each : case4) {
-    for (auto item : each) {
-      std::cout << item << ",";
-    }
-    std::cout << std::endl;
+    PrintArray(each);
   }
-
 }
 }  // namespace leetcode

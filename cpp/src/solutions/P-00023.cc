@@ -1,6 +1,5 @@
-#include "src/include/list_node.h"
-
 #include <gtest/gtest.h>
+#include "src/include/list_node.h"
 
 namespace leetcode {
 class P00023 : public ::testing::Test {

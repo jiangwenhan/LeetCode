@@ -53,10 +53,10 @@ class P00076 : public ::testing::Test {
 };
 
 TEST_F(P00076, Solution) {
-  std::vector<std::tuple<std::string, std::string>> cases {
-    std::make_tuple<std::string, std::string>("ADOBECODEBANC", "ABC"),
-    std::make_tuple<std::string, std::string>("a", "a"),
-    std::make_tuple<std::string, std::string>("a", "aa"),
+  std::vector<std::tuple<std::string, std::string>> cases{
+      std::make_tuple<std::string, std::string>("ADOBECODEBANC", "ABC"),
+      std::make_tuple<std::string, std::string>("a", "a"),
+      std::make_tuple<std::string, std::string>("a", "aa"),
   };
 
   for (auto& each : cases) {

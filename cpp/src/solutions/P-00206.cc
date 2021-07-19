@@ -1,6 +1,6 @@
-#include "src/include/list_node.h"
-
 #include <gtest/gtest.h>
+#include "src/include/list_node.h"
+#include "src/include/output.h"
 
 namespace leetcode {
 class P00206 : public ::testing::Test {
@@ -25,12 +25,7 @@ TEST_F(P00206, Solution) {
   };
 
   for (auto each : cases) {
-    auto result = reverseList(each);
-    while (result != nullptr) {
-      std::cout << result->val << " ";
-      result = result->next;
-    }
-    std::cout << std::endl;
+    PrintLinkedList(reverseList(each));
   }
 }
 }  // namespace leetcode

@@ -10,7 +10,7 @@ class P00004 : public ::testing::Test {
     size_t total = nums1.size() + nums2.size();
     bool is_odd = total % 2 == 0 ? false : true;
     int prev = 0, current = 0;
-    for (; ;) {
+    for (;;) {
       if (count > total / 2) {
         break;
       }

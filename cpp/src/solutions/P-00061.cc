@@ -1,6 +1,6 @@
-#include "src/include/list_node.h"
-
 #include <gtest/gtest.h>
+#include "src/include/list_node.h"
+#include "src/include/output.h"
 
 namespace leetcode {
 class P00061 : public ::testing::Test {
@@ -31,12 +31,7 @@ TEST_F(P00061, Solution) {
       std::tuple<ListNode*, int>{CreateListNode(std::vector<int>{0, 1, 2})->next, 4},
   };
   for (auto& each : cases) {
-    auto result = rotateRight(std::get<0>(each), std::get<1>(each));
-    while (result != nullptr) {
-      std::cout << result->val << " ";
-      result = result->next;
-    }
-    std::cout << std::endl;
+    PrintLinkedList(rotateRight(std::get<0>(each), std::get<1>(each)));
   }
 }
 }  // namespace leetcode

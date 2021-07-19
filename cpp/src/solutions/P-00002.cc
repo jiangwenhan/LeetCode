@@ -1,6 +1,6 @@
-#include "src/include/list_node.h"
-
 #include <gtest/gtest.h>
+#include "src/include/list_node.h"
+#include "src/include/output.h"
 
 namespace leetcode {
 class P00002 : public ::testing::Test {
@@ -36,12 +36,6 @@ class P00002 : public ::testing::Test {
 TEST_F(P00002, Solution) {
   auto l1 = CreateListNode(std::vector<int>{2, 4, 3});
   auto l2 = CreateListNode(std::vector<int>{5, 6, 4});
-
-  auto result = addTwoNumbers(l1->next, l2->next);
-  while (result != nullptr) {
-    std::cout << result->val << " ";
-    result = result->next;
-  }
-  std::cout << std::endl;
+  PrintLinkedList(addTwoNumbers(l1->next, l2->next));
 }
 }  // namespace leetcode
