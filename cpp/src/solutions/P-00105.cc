@@ -38,5 +38,9 @@ TEST_F(P00105, Solution) {
       std::make_tuple<std::vector<int>, std::vector<int>>(std::vector<int>{-1},
                                                           std::vector<int>{-1}),
   };
+
+  for (auto& each : cases) {
+    PrintTree(buildTree(std::get<0>(each), std::get<1>(each)));
+  }
 }
 }  // namespace leetcode

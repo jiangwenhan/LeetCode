@@ -61,13 +61,22 @@ void PrintTree(TreeNode* root) {
     std::cout << " ";
 
     if (level_count == 0) {
+      // check if all are nullptr
+      bool allNull = true;
+      for (auto iter = q.begin(); iter != q.end(); ++iter) {
+        if (*iter != nullptr) {
+          allNull = false;
+          break;
+        }
+      }
+      if (allNull) q.clear();
+      level_hight++;
       if (q.size() != 0) {
         std::cout << std::endl << "level " << level_hight << ": ";
       } else {
         std::cout << std::endl;
       }
       level_count = q.size();
-      level_hight++;
     }
   }
 }
