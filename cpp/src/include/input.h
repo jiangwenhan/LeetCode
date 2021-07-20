@@ -11,10 +11,8 @@
 int SkipSpace(char* input) {
   int distance = 0;
   char* curr = input;
-  while (curr != nullptr) {
-    if (curr[0] == '\0') {
-      break;
-    } else if (std::isspace(curr[0])) {
+  while (curr != nullptr && curr[0] != '\0') {
+    if (std::isspace(curr[0])) {
       distance++;
       curr++;
       continue;
