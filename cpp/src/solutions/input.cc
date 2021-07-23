@@ -30,6 +30,21 @@ TEST_F(Input, array) {
   }
 }
 
+TEST_F(Input, linkedList) {
+  char* input = "[     11 , 21123   , 3]";
+  ListNode head;
+  auto res = AToLinkedList(&head, input);
+  std::cout << "res:" << res << std::endl;
+  if (res == 0) {
+    ListNode* curr = &head;
+    while (curr != nullptr) {
+      std::cout << curr->val << ",";
+      curr = curr->next;
+    }
+    std::cout << std::endl;
+  }
+}
+
 TEST_F(Input, matrix) {
   char* input = "[  [  1 , 2,  3 ]   ,  [ 4 ,5,6]   , [7,8,9 ]         ]";
   std::vector<std::vector<int>> matrix;

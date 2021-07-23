@@ -6,6 +6,7 @@
 #include <string>
 #include <vector>
 
+#include "src/include/list_node.h"
 #include "src/include/tree_node.h"
 
 int SkipSpace(char* input) {
@@ -38,6 +39,38 @@ int AToArray(std::vector<int>& array, char* input) {
       if (!std::regex_match(buffer, int_regex)) return -1;
       try {
         array.emplace_back(std::stoi(buffer));
+      } catch (...) {
+        return -2;
+      }
+      curr++;
+      buffer_size = 0;
+    } else {
+      buffer_size++;
+      curr++;
+    }
+  }
+  return 0;
+}
+
+int AToLinkedList(ListNode* head, char* input) {
+  if (head == nullptr) return 0;
+  char* curr = input;
+  int buffer_size = 0;
+  const std::regex int_regex("\\s*(\\+|-)?[[:digit:]]+\\s*");
+  while (curr != nullptr && curr[0] != '\0') {
+    if (curr[0] == '[') {
+      curr++;
+      auto dis = SkipSpace(curr);
+      curr += dis;
+    } else if (curr[0] == ',' || curr[0] == ']') {
+      std::string buffer(curr - buffer_size, buffer_size);
+      if (!std::regex_match(buffer, int_regex)) return -1;
+      try {
+        head->val = std::stoi(buffer);
+        if (curr[0] == ',') {
+          head->next = new ListNode;
+          head = head->next;
+        }
       } catch (...) {
         return -2;
       }
