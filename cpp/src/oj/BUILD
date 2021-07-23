@@ -9,3 +9,10 @@ cc_binary(
    srcs = ["OJ-00002.cc"],
    deps = [],
 )
+
+cc_binary(
+   name = "OJ-00003",
+   srcs = ["OJ-00003.cc"],
+   deps = [],
+)
+
