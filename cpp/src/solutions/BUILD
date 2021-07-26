@@ -21,6 +21,12 @@ cc_test(
 )
 
 cc_test(
+    name = "combination_test",
+    srcs = ["combination_test.cc"],
+    deps = [":common"],
+)
+
+cc_test(
     name = "P-00002",
     srcs = ["P-00002.cc"],
     deps = [":common"],
