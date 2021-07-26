@@ -19,7 +19,12 @@ cc_binary(
 cc_binary(
    name = "OJ-00004",
    srcs = ["OJ-00004.cc"],
-   deps = [
-   ],
+   deps = [],
+)
+
+cc_binary(
+   name = "OJ-00005",
+   srcs = ["OJ-00005.cc"],
+   deps = [],
 )
 
