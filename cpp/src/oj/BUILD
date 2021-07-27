@@ -28,3 +28,15 @@ cc_binary(
    deps = [],
 )
 
+cc_binary(
+   name = "OJ-00006",
+   srcs = ["OJ-00006.cc"],
+   deps = [],
+)
+
+cc_binary(
+   name = "OJ-00007",
+   srcs = ["OJ-00007.cc"],
+   deps = [],
+)
+
