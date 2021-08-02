@@ -159,6 +159,12 @@ cc_test(
 )
 
 cc_test(
+    name = "P-00121",
+    srcs = ["P-00121.cc"],
+    deps = [":common"],
+)
+
+cc_test(
     name = "P-00143",
     srcs = ["P-00143.cc"],
     deps = [":common"],
