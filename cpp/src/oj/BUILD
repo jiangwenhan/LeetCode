@@ -40,4 +40,9 @@ cc_binary(
    deps = [],
 )
 
+cc_binary(
+   name = "OJ-00008",
+   srcs = ["OJ-00008.cc"],
+   deps = [],
+)
 
