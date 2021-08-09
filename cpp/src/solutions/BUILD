@@ -39,6 +39,12 @@ cc_test(
 )
 
 cc_test(
+    name = "sort_test",
+    srcs = ["sort_test.cc"],
+    deps = [":common"],
+)
+
+cc_test(
     name = "P-00002",
     srcs = ["P-00002.cc"],
     deps = [":common"],
